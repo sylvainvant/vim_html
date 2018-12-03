@@ -67,21 +67,21 @@
 	<p><a href="https://github.com/junegunn/vim-plug">github vim-plug</a></p>
 			<h3>1 ÈRE INSTALLATION</h3>  
 <p><strong>Installer GIT:</strong></p>   
-	<p><mark>$ sudo apt install git</mark></p>   
+	<p><code><mark>$ sudo apt install git</mark></code></p>   
 <p><strong>Installer CURL:</strong></p>
-	<p><mark> $ sudo apt install curl</mark></p>
+	<p><code><mark> $ sudo apt install curl</mark></code></p>
 <p><strong>Dans un terminal saisir :</strong></p>  
-	<p><mark>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</mark></p>
-	<p><mark>https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</mark></p>
+	<p><code><mark>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</mark></code></p>
+	<p><code><mark>https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</mark></code></p>
 <p>Créer, si pas fait, le fichier [ ~/.vimrc ]</p> 
- 	<p><mark>$ vim .vimrc</mark></p>
+ 	<p><code><mark>$ vim .vimrc</mark></code></p>
 <p><b>Insérer au début du fichier les lignes suivantes :</b></p>
-	<p><mark>call plug#begin()</mark></p>
-	<p><mark>call plug#end()</mark></p>
+	<p><code><mark>call plug#begin()</mark></code></p>
+	<p><code><mark>call plug#end()</mark></code></p>
 	<h3>A chaque nouvel de plugin, il faudra mettre une ligne qui ressemble à la suivante entre les 2 précédentes :</h3>
-	<p><mark>call plug#begin()</mark></p>
-	<p><mark>Plug ‘blablablabla’</mark></p>
-	<p><mark>call plug#end()</mark></p>
+	<p><code><mark>call plug#begin()</mark></code></p>
+	<p><code><mark>Plug ‘blablablabla’</mark></code></p>
+	<p><code><mark>call plug#end()</mark></code></p>
 	<h3>Ajouter un Plugin</h3>
 <p>RDV chez <a href="https://vimawesome.com">vim awesome.com</a></p>
 <p><strong>Chercher un plugin et faire ce qui est dit :</strong></p>
@@ -91,17 +91,17 @@
 	<li>forcer la lecture du fichier de configuration avec <em>:source %</em> installer avec <em>:PlugInstall</em></li>
 </ol></p>
 		<h4>AU BESOIN :</h4>  
-<p>Pour mettre à jour les plugins ....... <mark><em>:PlugUpdate</em></mark></p>  
-<p>Pour supprimer les plugins .......... <mark><em>:PlugClean</em></mark></p>
-<p>Voir le status des plugins ............. <mark><em>:PlugStatus</em></mark></p>
+<p>Pour mettre à jour les plugins ....... <code><mark><em>:PlugUpdate</em></mark></code></p>  
+<p>Pour supprimer les plugins .......... <code><mark><em>:PlugClean</em></mark></code></p>
+<p>Voir le status des plugins ............. <code><mark><em>:PlugStatus</em></mark></code></p>
 		<h5>Mais encore...</h5>  
 <p>Ce qui est sympa avec Vim-plug est que l’on peut mettre des conditions dans les plugins</p>  
-<p><mark>Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'</mark></p>
+<p><code><mark>Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'</mark></code></p>
 <p>ici vim-snippets dépends de ultisnips</p>
 <p>On charge paresseusement les plugins</p>
-<p><mark>Plug 'StanAngeloff/php.vim', { 'for': 'php' }</mark></p>
+<p><code><mark>Plug 'StanAngeloff/php.vim', { 'for': 'php' }</mark></code></p>
 <p>Je n’ai besoin du plugin php-vim que si j’utilise un fichier PHP.</p>
-<p><mark>Plug 'scrooloose/nerdtree', { 'on':</mark></p>
+<p><code><mark>Plug 'scrooloose/nerdtree', { 'on':</mark></code></p>
 <p>Je charge le plugin que si je l’appelle.</p>
 <p>'NERDTreeToggle' }</p>
 		</article>
