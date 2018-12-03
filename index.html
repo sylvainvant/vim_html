@@ -5,8 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
- 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- 	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="">
 	<meta name="author" content="">
 
 	<!--  tittle -->
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-	-->
+-->
 
 </head>
 <body>
@@ -28,8 +28,8 @@
 	<header>
 		<h1>Vim Cheats Sheets</h1>
 		<figure>
-				<img src="images/vim-8-ubuntu.jpg" alt="Vim screenshot" title="Vim screenshot">
-				<figcaption>Vim screenshot</figcaption>
+			<img src="images/vim-8-ubuntu.jpg" alt="Vim screenshot" title="Vim screenshot">
+			<figcaption>Vim screenshot</figcaption>
 		</figure>	
 	</header>
 	<!-- On peut bien sûr choisir n'importe quel autre nom que "haut" -->
@@ -47,13 +47,13 @@
 					<li><a href="#">Vim et Pluging</a></li>
 					<li><a href="#">Git Hub</a></li>
 					<li><a href="#">A venir</a></li>
-			   </ul>	
+				</ul>	
 			</li>
 		</ul>
 	</nav>
 	<hr>	
 	<section>
-<p>Exemple de pluging VimGame Code Break</p>
+		<p>Exemple de pluging VimGame Code Break</p>
 		<article>
 			<figure>
 				<img src="images/VimGameCodeBreak.gif" alt="Vim Game Code Break gif" title="Vim Game Code Break">
@@ -62,183 +62,187 @@
 		</article>	
 		<article>
 			<h2>VIM-PLUG</h2>
-<p>Liens :</p>    
-	<p><a href="https://vimawesome.com">vimawesome</a></p>
-	<p><a href="https://github.com/junegunn/vim-plug">github vim-plug</a></p>
+			<p>Liens :</p>    
+			<p><a href="https://vimawesome.com">vimawesome</a></p>
+			<p><a href="https://github.com/junegunn/vim-plug">github vim-plug</a></p>
 			<h3>1 ÈRE INSTALLATION</h3>  
-<p><strong>Installer GIT:</strong></p>   
-	<p><code><mark>$ sudo apt install git</mark></code></p>   
-<p><strong>Installer CURL:</strong></p>
-	<p><code><mark> $ sudo apt install curl</mark></code></p>
-<p><strong>Dans un terminal saisir :</strong></p>  
-	<p><code><mark>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</mark></code></p>
-	<p><code><mark>https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</mark></code></p>
-<p>Créer, si pas fait, le fichier [ ~/.vimrc ]</p> 
- 	<p><code><mark>$ vim .vimrc</mark></code></p>
-<p><b>Insérer au début du fichier les lignes suivantes :</b></p>
-	<p><code><mark>call plug#begin()</mark></code></p>
-	<p><code><mark>call plug#end()</mark></code></p>
-	<h3>A chaque nouvel de plugin, il faudra mettre une ligne qui ressemble à la suivante entre les 2 précédentes :</h3>
-	<p><code><mark>call plug#begin()</mark></code></p>
-	<p><code><mark>Plug ‘blablablabla’</mark></code></p>
-	<p><code><mark>call plug#end()</mark></code></p>
-	<h3>Ajouter un Plugin</h3>
-<p>RDV chez <a href="https://vimawesome.com">vim awesome.com</a></p>
-<p><strong>Chercher un plugin et faire ce qui est dit :</strong></p>
-<p><ol>
-	<li>insérer la ligne qui dit <em>Plug ‘blablabla’</em>  dans le fichier [ .vimrc ]</li>
-	<li>enregistrer avec <em>:w</em></li>
-	<li>forcer la lecture du fichier de configuration avec <em>:source %</em> installer avec <em>:PlugInstall</em></li>
-</ol></p>
-		<h4>AU BESOIN :</h4>  
-<p>Pour mettre à jour les plugins ....... <code><mark><em>:PlugUpdate</em></mark></code></p>  
-<p>Pour supprimer les plugins .......... <code><mark><em>:PlugClean</em></mark></code></p>
-<p>Voir le status des plugins ............. <code><mark><em>:PlugStatus</em></mark></code></p>
-		<h5>Mais encore...</h5>  
-<p>Ce qui est sympa avec Vim-plug est que l’on peut mettre des conditions dans les plugins</p>  
-<p><code><mark>Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'</mark></code></p>
-<p>ici vim-snippets dépends de ultisnips</p>
-<p>On charge paresseusement les plugins</p>
-<p><code><mark>Plug 'StanAngeloff/php.vim', { 'for': 'php' }</mark></code></p>
-<p>Je n’ai besoin du plugin php-vim que si j’utilise un fichier PHP.</p>
-<p><code><mark>Plug 'scrooloose/nerdtree', { 'on':</mark></code></p>
-<p>Je charge le plugin que si je l’appelle.</p>
-<p>'NERDTreeToggle' }</p>
+			<p><strong>Installer GIT:</strong></p>   
+			<p><code><mark>$ sudo apt install git</mark></code></p>   
+			<p><strong>Installer CURL:</strong></p>
+			<p><code><mark> $ sudo apt install curl</mark></code></p>
+			<p><strong>Dans un terminal saisir :</strong></p>  
+			<p><code><mark>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</mark></code></p>
+			<p><code><mark>https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</mark></code></p>
+			<p>Créer, si pas fait, le fichier [ ~/.vimrc ]</p> 
+			<p><code><mark>$ vim .vimrc</mark></code></p>
+			<p><b>Insérer au début du fichier les lignes suivantes :</b></p>
+			<p><code><mark>call plug#begin()</mark></code></p>
+			<p><code><mark>call plug#end()</mark></code></p>
+			<h3>A chaque nouvel de plugin, il faudra mettre une ligne qui ressemble à la suivante entre les 2 précédentes :</h3>
+			<p><code><mark>call plug#begin()</mark></code></p>
+			<p><code><mark>Plug ‘blablablabla’</mark></code></p>
+			<p><code><mark>call plug#end()</mark></code></p>
+			<h3>Ajouter un Plugin</h3>
+			<p>RDV chez <a href="https://vimawesome.com">vim awesome.com</a></p>
+			<p><strong>Chercher un plugin et faire ce qui est dit :</strong></p>
+			<p><ol>
+				<li>insérer la ligne qui dit <em>Plug ‘blablabla’</em>  dans le fichier [ .vimrc ]</li>
+				<li>enregistrer avec <em>:w</em></li>
+				<li>forcer la lecture du fichier de configuration avec <em>:source %</em> installer avec <em>:PlugInstall</em></li>
+			</ol></p>
+			<h4>AU BESOIN :</h4>  
+			<p>Pour mettre à jour les plugins ....... <code><mark><em>:PlugUpdate</em></mark></code></p>  
+			<p>Pour supprimer les plugins .......... <code><mark><em>:PlugClean</em></mark></code></p>
+			<p>Voir le status des plugins ............. <code><mark><em>:PlugStatus</em></mark></code></p>
+			<h5>Mais encore...</h5>  
+			<p>Ce qui est sympa avec Vim-plug est que l’on peut mettre des conditions dans les plugins</p>  
+			<p><code><mark>Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'</mark></code></p>
+			<p>ici vim-snippets dépends de ultisnips</p>
+			<p>On charge paresseusement les plugins</p>
+			<p><code><mark>Plug 'StanAngeloff/php.vim', { 'for': 'php' }</mark></code></p>
+			<p>Je n’ai besoin du plugin php-vim que si j’utilise un fichier PHP.</p>
+			<p><code><mark>Plug 'scrooloose/nerdtree', { 'on':</mark></code></p>
+			<p>Je charge le plugin que si je l’appelle.</p>
+			<p>'NERDTreeToggle' }</p>
 		</article>
 		<article>
-		<h3>Quelques Commandes</h3> 
-		<table>
-			<tr>
-				<th>Commande</th> 
-				<th>Description</th>
-				<th>(terme anglais)</th>
-			</tr>
-			<tr>
-				<td>a</td>
-				<td>Entre en mode insertion apres le curseur</td>	
- 				<td> </td>
- 			</tr>
- 			<tr>
-				<td>A</td>
-				<td>Entre en mode insertion sur le dernier caractère</td>	
- 				<td> </td>
- 			</tr>		
-			<tr> 
-				<td>i</td>
-				<td>Entre en mode insertion au niveau du curseur</td>
-				<td>insert</td>
-			</tr>
-			<tr>	
-				<td>h</td>
-				<td>Se déplacer vers la gauche</td>
-				<td> </td>
-			</tr>
-			<tr>
-				<td>j</td>
-				<td>Se déplacer vers le bas</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>k</td>
-				<td>Se déplacer vers le haut </td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>l</td>
-				<td>Se déplacer vers la droite</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>$</td>
-				<td>Aller en fin de ligne</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>gg</td>
-				<td>aller en debut de document</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>G</td>
-				<td>aller en fin de document</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>v</td>
-				<td>Entre en mode visuel</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>"echap"</td>
-				<td>Entre en mode normal </td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>":"</td>
-				<td>Entre en mode commande</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>x</td>
-				<td>suprime Le caractère sous le curseur</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>dd</td>
-				<td>Suprime la ligne sous le curseur</td>
-				<td>delet</td>
-			</tr>	             
-			<tr>
-				<td>dw</td>
-				<td>Suprime le mot sur le curseur</td>
-				<td>delet word</td>
-			</tr>
-			<tr>
-				<td>u</td>
-				<td>Annulation de la dernière action </td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>yy</td>
-				<td>Copie une ligne</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>yw</td>
-				<td>Copie un mot</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>p</td>
-				<td>Coller</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>:w</td>
-				<td>Sauvergarder</td>
-				<td>write</td>
-			</tr>
-			<tr>
-				<td>:q</td>
-				<td>Quitter</td>
-				<td>exit</td>
-			</tr>
-			<tr>
-				<td>:q!</td>
-				<td>Quitter sans enregistrer</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>:wq</td>
-				<td>Quitter et enregistrer</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>~</td>
-				<td>Inverse la casse de la lettre sous le curseur</td>
-				<td></td>
-			</tr>
-		</table>
+			<h3>Quelques Commandes</h3> 
+			<table>
+				<thead>
+					<tr>
+						<th>Commande</th> 
+						<th>Description</th>
+						<th>(terme anglais)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>a</td>
+						<td>Entre en mode insertion apres le curseur</td>	
+						<td> </td>
+					</tr>
+					<tr>
+						<td>A</td>
+						<td>Entre en mode insertion sur le dernier caractère</td>	
+						<td> </td>
+					</tr>		
+					<tr> 
+						<td>i</td>
+						<td>Entre en mode insertion au niveau du curseur</td>
+						<td>insert</td>
+					</tr>
+					<tr>	
+						<td>h</td>
+						<td>Se déplacer vers la gauche</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>j</td>
+						<td>Se déplacer vers le bas</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>k</td>
+						<td>Se déplacer vers le haut </td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>l</td>
+						<td>Se déplacer vers la droite</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>$</td>
+						<td>Aller en fin de ligne</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>gg</td>
+						<td>aller en debut de document</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>G</td>
+						<td>aller en fin de document</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>v</td>
+						<td>Entre en mode visuel</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>"echap"</td>
+						<td>Entre en mode normal </td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>":"</td>
+						<td>Entre en mode commande</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>x</td>
+						<td>suprime Le caractère sous le curseur</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>dd</td>
+						<td>Suprime la ligne sous le curseur</td>
+						<td>delet</td>
+					</tr>	             
+					<tr>
+						<td>dw</td>
+						<td>Suprime le mot sur le curseur</td>
+						<td>delet word</td>
+					</tr>
+					<tr>
+						<td>u</td>
+						<td>Annulation de la dernière action </td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>yy</td>
+						<td>Copie une ligne</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>yw</td>
+						<td>Copie un mot</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>p</td>
+						<td>Coller</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>:w</td>
+						<td>Sauvergarder</td>
+						<td>write</td>
+					</tr>
+					<tr>
+						<td>:q</td>
+						<td>Quitter</td>
+						<td>exit</td>
+					</tr>
+					<tr>
+						<td>:q!</td>
+						<td>Quitter sans enregistrer</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>:wq</td>
+						<td>Quitter et enregistrer</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>~</td>
+						<td>Inverse la casse de la lettre sous le curseur</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
 		</article>
 	</section>
 	<br/><br/><br/><br/>
@@ -249,11 +253,11 @@
 		<a href="license.html">© 2018 | Created by fulmack.</a>
 		<h4>Links</h4>
 		<ul class="social">
-	        <li class="twitter"><a href="https://twitter.com/vantieghemsylv1">Follow me on Twitter</a></li>
-	        <li class="linkedin"><a href="https://www.linkedin.com/in/sylvain-vantieghem-a863b1136/">Add me on linkedin</a></li>
-	        <li class="Git Hub"><a href="https://github.com/sylvainvant">Add me on Git Hub</a></li>
-	        <li class="facebook"><a href="https://www.facebook.com/sylvainvantieghem">Add me on Facebook</a></li>
-	    </ul>
+			<li class="twitter"><a href="https://twitter.com/vantieghemsylv1">Follow me on Twitter</a></li>
+			<li class="linkedin"><a href="https://www.linkedin.com/in/sylvain-vantieghem-a863b1136/">Add me on linkedin</a></li>
+			<li class="Git Hub"><a href="https://github.com/sylvainvant">Add me on Git Hub</a></li>
+			<li class="facebook"><a href="https://www.facebook.com/sylvainvantieghem">Add me on Facebook</a></li>
+		</ul>
 	</footer>
 
 	<!-- link java script pour plus tard 
@@ -261,6 +265,6 @@
 	<script src="bootstrap/js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	-->
+-->
 </body>
 </html>
